@@ -11,4 +11,9 @@ Data is here
 /u/home/n/ngcrawfo/project-zarlab/igor/METASUB/CAMDA/ala.boku.ac.at/camda2017/MetaSUB/*/data
 ```
 
+* Boston 141 samples
+* NY 1572 samples
+* Sacramento 18 samples 
+
+
 
