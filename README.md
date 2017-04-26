@@ -16,4 +16,8 @@ Data is here
 * Sacramento 18 samples 
 
 
+# Alligment based profiling
+Run our tool, SURPI, Metahplan2, Kraken
 
+# Alligment free profiling 
+David
