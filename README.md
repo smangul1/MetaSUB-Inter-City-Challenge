@@ -16,6 +16,11 @@ Data is here
 * Sacramento 18 samples 
 
 
+I selected all Sacramento, Boston and 65 NY samples. Total n=224. Fastq files are here
+```
+/u/home/s/serghei/collab/MetaSUB-Inter-City-Challenge/data
+```
+
 # Alligment based profiling
 
 Run our tool
@@ -28,6 +33,15 @@ $PWD/../bin/dsrc d Sample_1A.fastq.dsrc Sample_1A.fastq
 
 ```
 while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${line}.sh; echo "module load bwa" >>run_${line}.sh; echo "module load bowtie2" >>run_${line}.sh; echo "../bin/dsrc d ../data/${line}.fastq.dsrc ${line}.fastq">>run_${line}.sh;echo "bwa mem /u/home/s/serghei/project/Viruses/bwaIndex/viruses.fa ${line}.fastq | samtools view -bS - | samtools view -b -F 4 - >${line}.bam">>run_${line}.sh;done<../samples.txt```
+
+```
+while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${line}.sh; echo "module load bwa" >>run_${line}.sh; echo "module load bowtie2" >>run_${line}.sh; echo "bwa mem /u/home/s/serghei/project/Viruses/bwaIndex/viruses.fa ../data/${line}.fastq | samtools view -bS - | samtools view -b -F 4 - >${line}.bam">>run_${line}.sh;done<../samples.txt
+ls run*sh | awk '{i+=1;print "qsub -cwd -V -N bwa"i" -l h_data=12G,time=12:00:00 "$1}' > ALL.SH
+here
+/u/home/s/serghei/collab/MetaSUB-Inter-City-Challenge/virus2
+
+```
+
 Running virus here
 ```
 /u/home/s/serghei/collab/MetaSUB-Inter-City-Challenge/virus
