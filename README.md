@@ -21,3 +21,10 @@ Run our tool, SURPI, Metahplan2, Kraken
 
 # Alligment free profiling 
 David
+
+
+# Convert from dsrc to fastq
+
+```
+$PWD/../bin/dsrc d Sample_1A.fastq.dsrc Sample_1A.fastq
+```
