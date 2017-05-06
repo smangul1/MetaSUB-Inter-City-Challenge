@@ -28,6 +28,8 @@ Run our tool
 ### Convert from dsrc to fastq
 
 ```
+download release from here
+https://github.com/lrog/dsrc/releases
 $PWD/../bin/dsrc d Sample_1A.fastq.dsrc Sample_1A.fastq
 ```
 
