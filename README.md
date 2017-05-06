@@ -27,8 +27,7 @@ $PWD/../bin/dsrc d Sample_1A.fastq.dsrc Sample_1A.fastq
 ```
 
 ```
-while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${line}.sh; echo "module load bwa" >>run_${line}.sh; echo "module load bowtie2" >>run_${line}.sh; echo "../bin/dsrc d ${line}.dsrc ${line}.fastq">>run_${line}.sh;echo "bwa mem /u/home/s/serghei/project/Viruses/bwaIndex/viruses.fa ${line}.fastq | samtools view -bS - | samtools view -b -F 4 - >${line}.bam">>run_${line}.sh;done<../samples.txt 
-```
+while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${line}.sh; echo "module load bwa" >>run_${line}.sh; echo "module load bowtie2" >>run_${line}.sh; echo "../bin/dsrc d ../data/${line}.fastq.dsrc ${line}.fastq">>run_${line}.sh;echo "bwa mem /u/home/s/serghei/project/Viruses/bwaIndex/viruses.fa ${line}.fastq | samtools view -bS - | samtools view -b -F 4 - >${line}.bam">>run_${line}.sh;done<../samples.txt```
 Running virus here
 ```
 /u/home/s/serghei/collab/MetaSUB-Inter-City-Challenge/virus
