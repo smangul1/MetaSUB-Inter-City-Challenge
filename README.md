@@ -54,6 +54,9 @@ run fungi
 
 ```
 while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${line}.sh; echo "module load bwa" >>run_${line}.sh; echo "module load bowtie2" >>run_${line}.sh; echo "bwa mem -a /u/home/s/serghei/project/eupathdb/bwa/fungi.fa ../data/${line}.fastq | samtools view -bS - | samtools view -b -F 4 - >${line}.bam">>run_${line}.sh;done<../samples.txt 
+running here
+/u/home/s/serghei/collab/MetaSUB-Inter-City-Challenge/fungi
+
 ```
 
 
