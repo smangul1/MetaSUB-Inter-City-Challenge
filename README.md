@@ -65,5 +65,18 @@ David
 
 
 
+# Preliminary results
+
+Mapping to fungi using BWA we detect Malassezia supported by 516826 (2.5% abundance) reads
+in one sample SRR3545919 . Total number of reads 20466091. 
+
+This fungus also reported in ths study here : Urban Transit System Microbial Communities Differ by Surface Type and Interaction with Humans and the Environment
+
+- http://msystems.asm.org/content/1/3/e00018-16
+
+Another fungus supported by 
+is Cryptococcus Gattii  (maybe FP?) 
+was not reported in urban microbiome
+
 
 
