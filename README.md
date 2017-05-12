@@ -89,5 +89,10 @@ was not reported in urban microbiome
 ### Ameoba
 samtools view SRR3545919.bam | awk '{print $3}' | sort  | uniq -c >../SRR3545919.ameoba_genomes 
 
+The most abundant - Entamoeba. 290511 reads 
+
+- Entamoeba rise to symptoms that usually include diarrhea related to damage in the wall of the bowel.
+
 ### Virus
 
+Looking at one sample nothing shows up
