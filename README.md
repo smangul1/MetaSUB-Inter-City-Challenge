@@ -68,8 +68,9 @@ while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${lin
 
 
 
-# Alligment free profiling 
-David
+# Run imrep
+
+
 
 
 
