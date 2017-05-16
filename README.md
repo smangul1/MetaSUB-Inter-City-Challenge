@@ -70,7 +70,10 @@ while read line ; do echo ". /u/local/Modules/default/init/modules.sh">run_${lin
 
 # Run imrep
 
-
+```
+qsub -cwd -V -N imrep -l h_data=16G,time=24:00:00 run.sh 
+/u/home/s/serghei/collab/MetaSUB-Inter-City-Challenge/imrep
+```
 
 
 
