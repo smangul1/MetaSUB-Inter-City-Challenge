@@ -123,3 +123,11 @@ grep "" *profile | awk '{if($2>1000) print}' | awk '{print $3}' | sort | uniq -c
 129
 
 ```
+
+## Fungi
+```
+grep "" *profile | awk '{if($2>1000) print}' | awk '{print $3}' | sort | uniq  >LIST_fungi.txt
+
+while read line; do grep  ${line} fungi.fa;done<~/collab/MetaSUB-Inter-City-Challenge/fungi/LIST_fungi.txt >~/collab/MetaSUB-Inter-City-Challenge/fungi/LIST_fungi_names.txt
+
+```
