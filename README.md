@@ -100,3 +100,7 @@ The most abundant - Entamoeba. 290511 reads
 ### Virus
 
 Looking at one sample nothing shows up
+
+```
+for f in *bam ; do samtools view ${f} | awk '{print $3}' | sort | uniq -c >${f}.profile;done
+```
