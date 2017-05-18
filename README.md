@@ -113,3 +113,13 @@ sort -k 1n SRR3545948.bam.profile
  9584 gi|531034792|ref|NC_022098.1| - FP?
   14849 gi|9628932|ref|NC_001731.1| - TP, confirmed by SURPI
   ```
+
+# CAMDA 2017 abstract 
+
+## Viruses
+
+```
+grep "" *profile | awk '{if($2>1000) print}' | awk '{print $3}' | sort | uniq -c | wc -l
+129
+
+```
