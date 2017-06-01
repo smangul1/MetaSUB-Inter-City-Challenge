@@ -5,6 +5,8 @@ http://camda.info/
 
 # New ideas
 
+From Nicolás Rascovan
+
 - Endemic species  - found 
 - Species present in many species but different ay SNP level
 
