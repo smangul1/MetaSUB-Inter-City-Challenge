@@ -3,6 +3,11 @@ The MetaSUB Inter-City Challenge presents the urban microbiomes of three cities.
 
 http://camda.info/
 
+# New ideas
+
+- Endemic species  - found 
+- Species present in many species but different ay SNP level
+
 # Data
 Data is here
 
